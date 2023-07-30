@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio website</title>
+        <link rel="stylesheet" href="style.css"
+    </head>
+    <body>
+      <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/Riya Sinha.png" class="logo">
+                <ul id="sidemenu"> 
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="close" onclick="closemenu()"><p>✖</p></a></li>
+                </ul>
+                <a href="#" class="menu" onclick="openmenu()" ><p>☰</p></a>
+            </nav>
+            <div class="header-text">
+                <h1>Hey,<br> I'm Riya Sinha <br>And I'm a <span>Front-End Developer</span></h1>
+                </div>
+            </div>
+        </div>
+      </div> 
+<!----------------------------------------------about-------------------------------------------------->
+      <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/Riyapic.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="about">
+                    <p> Currently I'm pursuing Btech in Computer Science and Engineering From Bengal College of Engineering and Technology, Durgapur. My Future aim is to be a Web and Android Developer and I am passionate about my work because I love what i do ,I have a steady source of motivation that drives me to do my best.
+                        My hobby is playing Basketball.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('experience')">Training</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="experience">
+                            <ul>
+                                <li><span>2023 - Current</span><br>Summer Training From Anovatech Institute Of Crystalline Technology at Durgapur <br>Where my course is Core java  and project is on going.</li>
+
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020 - Current</span><br>BTech in Computer Science & Engineering from Bengal College of Engineering & Technology,Durgapur</li>
+                                <li><span>2020</span><br>Intermediate from Saraswati Vidya Mandir,Munger.</li>
+                                <li><span>2018</span><br>Matriculation from Saraswati Vidya Mandir,Munger.</li>
+                            </ul>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+      </div> 
+  <!----------------------------------------------skills---------------------------------------------->  
+      <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="skills-list">
+              <div>
+                <img src="image/html.png" class="logo">
+                <h2>HTML/CSS</h2>
+                <p>Hypertext Markup Language (HTML) and Cascading Style Sheets (CSS) are the fundamental building blocks of web pages.
+                   Proficiency in writing semantic HTML and styling it with CSS is essential.</p>
+                 <a href="#">Learn more</a>  
+              </div>
+              <div>
+                <img src="image/javasrcipt.png" class="logo">
+                <h2>JavaScript</h2>
+                <p>JavaScript is a programming language used for adding interactivity and dynamic functionality to websites.
+                  Understanding core JavaScript concepts, libraries (e.g., jQuery) and frameworks (e.g., React, Angular, Vue.js) is valuable.</p>
+                 <a href="#">Learn more</a>  
+              </div>
+              <div>
+                <img src="image/learning.jpg" class="logo">
+                <h2>Java</h2>
+                <p> Java is the high-level, object-oriented, robust, secure programming language, platform-independent, high performance, Multithreaded, and portable programming language. It was developed by James Gosling in June 1991.</p>
+                 <a href="#">Learn more</a>  
+              </div>
+              <div>
+                <img src="image/sql.png" class="logo">
+                <h2>Databases and SQL</h2>
+                <p> Knowledge of database management systems (e.g., MySQL, PostgreSQL) and Structured Query Language (SQL) 
+                    is important for creating and managing databases that power web applications.</p>
+                 <a href="#">Learn more</a>  
+              </div>
+              
+              
+              <div>
+                <img src="image/learning.jpg" class="logo">
+                <h2>Continuous Learning</h2>
+                <p> Web development is a constantly evolving field, so staying updated with the latest web technologies, trends, and 
+                    best practices is essential. Being open to learning new tools and frameworks is crucial.</p>
+                 <a href="#">Learn more</a>  
+              </div>
+            </div>
+        </div>
+      </div>
+<!------------------------------------------------------project-------------------------------------------------------->
+    
+ <!------------------------------------------------------contact------------------------------------------------->   
+    <div id="contact">
+          <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="#"><img src="image/send paper_plane.png"></a>  riyasinha689@gmail.com</p>
+                    <p><a href="#"><img src="image/call.png"></a> 6207140553</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="image/instagrma.png"></a>
+                        <a href="#"><img src="image/linkedin.png"></a>
+
+                    </div>
+                    <a href="c:\Users\riyas\Downloads\Riya sinha(Resume) (2).pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="http://localhost/portfolio/portfolio.php" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message.........."></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>       
+          </div>
+          <div class="copyright">
+               <p> © Copyright 2023 www.riya.com. All rights reserved. Developed by Riya🦋</p>
+          </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>
+      </body>
+      </html>
